@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | dentissimo</title>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b6e624e448.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
+    >
+      <!-- left -->
+      <div class="flex gap-10 max-lg:gap-7">
+        <a href="/">
+          <svg
+            class="max-sm:w-[150px]"
+            width="200"
+            height="40"
+            viewBox="0 0 209 48"
+            fill="none"
+          >
+            <path
+              d="M23.4327 39.9995C23.1822 39.9995 22.9318 39.9995 22.6813 39.9995C21.5542 39.7333 20.9123 38.9663 20.5523 37.9331C20.3566 37.3773 20.1844 36.806 20.067 36.2268C19.7539 34.7552 19.4956 33.2759 19.1747 31.8044C18.9869 30.9199 18.7286 30.0433 18.212 29.284C17.5467 28.3135 16.4743 28.3135 15.7934 29.2606C15.6994 29.3936 15.6133 29.5423 15.5429 29.6911C14.9167 30.9356 14.7054 32.2897 14.4314 33.6281C14.1497 34.9666 13.8992 36.3128 13.547 37.6356C13.2339 38.7941 12.5842 39.702 11.3162 39.9916C11.0658 39.9916 10.8153 39.9916 10.5648 39.9916C9.58642 39.7412 8.81153 39.1933 8.14622 38.4418C7.1913 37.3539 6.50251 36.0937 5.88416 34.7944C4.45179 31.7887 3.40294 28.6266 2.58109 25.3939C2.0645 23.3432 1.67314 21.2612 1.24264 19.187C1.13306 18.6547 1.07827 18.099 1 17.5589C1 17.0345 1 16.5179 1 15.9935C1.05479 15.6961 1.09393 15.4064 1.15654 15.109C1.634 12.7843 2.82373 10.9058 4.78053 9.56737C7.08955 7.98628 9.6099 7.59492 12.3024 8.4246C13.5391 8.80031 14.6193 9.49693 15.7464 10.0918C16.2708 10.3657 16.8266 10.5693 17.3745 10.7806C17.6484 10.8902 17.8989 10.8275 18.1494 10.624C18.6973 10.1935 19.253 9.77088 19.84 9.39517C21.108 8.58115 22.4934 8.05673 24.0197 8.01759C26.1253 7.95497 28.0194 8.58115 29.6631 9.89611C31.5495 11.4068 32.6531 13.3792 32.9427 15.7822C33.1071 17.1676 32.8879 18.5217 32.6609 19.8758C32.1913 22.6309 31.5025 25.3391 30.6807 28.0082C29.8119 30.8416 28.81 33.6203 27.3698 36.2268C26.8845 37.1034 26.3288 37.9331 25.64 38.6688C25.0373 39.3263 24.3015 39.7725 23.4327 39.9995ZM15.4881 12.8C14.5254 12.2756 13.5939 11.7512 12.639 11.2659C11.5589 10.718 10.4083 10.4127 9.1794 10.5458C6.72167 10.8197 5.00752 12.119 3.98998 14.3576C3.41077 15.6256 3.43425 16.9641 3.62993 18.3103C3.98216 20.7289 4.52223 23.1084 5.18754 25.4565C6.02505 28.4465 6.98779 31.4052 8.3732 34.1917C8.84283 35.1309 9.35943 36.0546 10.0795 36.8294C10.3065 37.0721 10.5805 37.2678 10.9014 37.5495C11.0658 37.0877 11.2301 36.7355 11.3084 36.3676C11.6371 34.8257 11.9189 33.2681 12.2555 31.7261C12.5686 30.2859 12.9756 28.8927 13.8601 27.6716C15.4177 25.5192 18.572 25.5113 20.1375 27.6638C20.9671 28.7988 21.3898 30.0981 21.6794 31.4443C22.016 32.9941 22.2978 34.5596 22.6265 36.1172C22.7204 36.5711 22.9083 37.0173 23.057 37.4948C23.7223 37.1738 24.1058 36.6729 24.4581 36.1641C25.7339 34.3404 26.5636 32.2975 27.2993 30.2155C28.6769 26.3567 29.7492 22.4118 30.3519 18.3495C30.5006 17.3398 30.5554 16.3301 30.3206 15.3125C29.4283 11.5085 24.7711 8.90989 20.9515 11.6651C19.7304 12.5495 18.5877 13.5358 17.4136 14.4907C16.31 15.383 15.1515 16.197 13.7818 16.6353C13.1165 16.8466 12.4433 16.9797 11.7232 16.9406C11.7232 16.1031 11.7232 15.289 11.7232 14.4594C13.2182 14.4202 14.3845 13.6845 15.4881 12.8Z"
+              fill="#222222"
+              stroke="#222222"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M47.278 36V12.2H55.132C57.9653 12.2 60.2773 12.6987 62.068 13.696C63.8813 14.6707 65.2187 16.0533 66.08 17.844C66.9413 19.6347 67.372 21.7313 67.372 24.134C67.372 26.6273 66.9073 28.7693 65.978 30.56C65.0713 32.328 63.7113 33.6767 61.898 34.606C60.0847 35.5353 57.8293 36 55.132 36H47.278ZM51.154 32.702H54.996C57.0813 32.702 58.736 32.362 59.96 31.682C61.2067 31.002 62.0907 30.016 62.612 28.724C63.1333 27.432 63.394 25.902 63.394 24.134C63.394 21.1647 62.714 18.9773 61.354 17.572C59.994 16.1667 57.8747 15.464 54.996 15.464H51.154V32.702ZM77.5298 36.408C75.8298 36.408 74.3452 36.034 73.0758 35.286C71.8065 34.5153 70.8092 33.4727 70.0838 32.158C69.3812 30.8207 69.0298 29.2907 69.0298 27.568C69.0298 25.7773 69.3812 24.2247 70.0838 22.91C70.8092 21.5953 71.8065 20.5753 73.0758 19.85C74.3678 19.102 75.8638 18.728 77.5638 18.728C79.2185 18.728 80.6578 19.0907 81.8818 19.816C83.1058 20.5187 84.0692 21.4933 84.7718 22.74C85.4745 23.9867 85.8258 25.4033 85.8258 26.99C85.8258 27.3073 85.8145 27.5907 85.7918 27.84C85.7918 28.0893 85.7692 28.3613 85.7238 28.656H72.9058C72.9738 29.54 73.2005 30.3333 73.5858 31.036C73.9712 31.716 74.4925 32.2487 75.1498 32.634C75.8298 33.0193 76.6005 33.212 77.4618 33.212C78.3912 33.212 79.1732 33.008 79.8078 32.6C80.4652 32.192 80.9752 31.6027 81.3378 30.832H85.3838C85.0665 31.852 84.5565 32.7813 83.8538 33.62C83.1738 34.4587 82.3012 35.1387 81.2358 35.66C80.1932 36.1587 78.9578 36.408 77.5298 36.408ZM72.9398 25.97H81.8818C81.8592 24.7233 81.4172 23.7373 80.5558 23.012C79.6945 22.2867 78.6632 21.924 77.4618 21.924C76.3738 21.924 75.3878 22.2527 74.5038 22.91C73.6425 23.5673 73.1212 24.5873 72.9398 25.97ZM87.6008 36V19.136H91.3408L91.4088 21.448C91.9755 20.564 92.7575 19.8953 93.7548 19.442C94.7522 18.966 95.7948 18.728 96.8828 18.728C98.8548 18.728 100.453 19.3513 101.677 20.598C102.901 21.8447 103.513 23.6807 103.513 26.106V36H99.7048V26.582C99.7048 25.154 99.3648 24.032 98.6848 23.216C98.0048 22.4 97.0075 21.992 95.6928 21.992C94.3782 21.992 93.3355 22.434 92.5648 23.318C91.8168 24.1793 91.4428 25.358 91.4428 26.854V36H87.6008ZM112.489 36C110.766 36 109.451 35.5807 108.545 34.742C107.638 33.9033 107.185 32.566 107.185 30.73V22.366H104.771V19.136H107.185V15.056H111.061V19.136H115.175V22.366H111.061V30.764C111.061 31.5347 111.242 32.0673 111.605 32.362C111.967 32.634 112.511 32.77 113.237 32.77H115.175V36H112.489ZM119.352 16.45C118.65 16.45 118.049 16.2007 117.55 15.702C117.052 15.2033 116.802 14.6027 116.802 13.9C116.802 13.1973 117.052 12.608 117.55 12.132C118.049 11.6333 118.65 11.384 119.352 11.384C120.055 11.384 120.656 11.6333 121.154 12.132C121.653 12.608 121.902 13.1973 121.902 13.9C121.902 14.6027 121.653 15.2033 121.154 15.702C120.656 16.2007 120.055 16.45 119.352 16.45ZM117.414 36V19.136H121.29V36H117.414ZM130.845 36.408C129.553 36.408 128.352 36.1813 127.241 35.728C126.153 35.252 125.258 34.5833 124.555 33.722C123.875 32.8607 123.49 31.852 123.399 30.696H127.275C127.411 31.4893 127.797 32.1353 128.431 32.634C129.089 33.11 129.882 33.348 130.811 33.348C131.65 33.348 132.341 33.1667 132.885 32.804C133.452 32.4413 133.735 31.9427 133.735 31.308C133.735 30.764 133.543 30.3447 133.157 30.05C132.772 29.7327 132.296 29.4947 131.729 29.336C131.163 29.1547 130.573 28.996 129.961 28.86C128.896 28.6107 127.899 28.3047 126.969 27.942C126.063 27.5793 125.326 27.0693 124.759 26.412C124.193 25.7547 123.909 24.8933 123.909 23.828C123.909 22.7627 124.204 21.856 124.793 21.108C125.383 20.3373 126.165 19.748 127.139 19.34C128.137 18.932 129.247 18.728 130.471 18.728C132.33 18.728 133.871 19.1927 135.095 20.122C136.342 21.0513 137.033 22.4113 137.169 24.202H133.497C133.407 23.4313 133.078 22.842 132.511 22.434C131.967 22.026 131.253 21.822 130.369 21.822C129.599 21.822 128.953 21.9693 128.431 22.264C127.933 22.5587 127.683 23.0347 127.683 23.692C127.683 24.1453 127.865 24.5193 128.227 24.814C128.613 25.1087 129.089 25.358 129.655 25.562C130.245 25.7433 130.823 25.902 131.389 26.038C132.545 26.31 133.577 26.6273 134.483 26.99C135.39 27.3527 136.104 27.8627 136.625 28.52C137.169 29.1773 137.453 30.0727 137.475 31.206C137.475 32.294 137.181 33.2233 136.591 33.994C136.002 34.7647 135.209 35.3653 134.211 35.796C133.214 36.204 132.092 36.408 130.845 36.408ZM145.281 36.408C143.989 36.408 142.788 36.1813 141.677 35.728C140.589 35.252 139.694 34.5833 138.991 33.722C138.311 32.8607 137.926 31.852 137.835 30.696H141.711C141.847 31.4893 142.232 32.1353 142.867 32.634C143.524 33.11 144.318 33.348 145.247 33.348C146.086 33.348 146.777 33.1667 147.321 32.804C147.888 32.4413 148.171 31.9427 148.171 31.308C148.171 30.764 147.978 30.3447 147.593 30.05C147.208 29.7327 146.732 29.4947 146.165 29.336C145.598 29.1547 145.009 28.996 144.397 28.86C143.332 28.6107 142.334 28.3047 141.405 27.942C140.498 27.5793 139.762 27.0693 139.195 26.412C138.628 25.7547 138.345 24.8933 138.345 23.828C138.345 22.7627 138.64 21.856 139.229 21.108C139.818 20.3373 140.6 19.748 141.575 19.34C142.572 18.932 143.683 18.728 144.907 18.728C146.766 18.728 148.307 19.1927 149.531 20.122C150.778 21.0513 151.469 22.4113 151.605 24.202H147.933C147.842 23.4313 147.514 22.842 146.947 22.434C146.403 22.026 145.689 21.822 144.805 21.822C144.034 21.822 143.388 21.9693 142.867 22.264C142.368 22.5587 142.119 23.0347 142.119 23.692C142.119 24.1453 142.3 24.5193 142.663 24.814C143.048 25.1087 143.524 25.358 144.091 25.562C144.68 25.7433 145.258 25.902 145.825 26.038C146.981 26.31 148.012 26.6273 148.919 26.99C149.826 27.3527 150.54 27.8627 151.061 28.52C151.605 29.1773 151.888 30.0727 151.911 31.206C151.911 32.294 151.616 33.2233 151.027 33.994C150.438 34.7647 149.644 35.3653 148.647 35.796C147.65 36.204 146.528 36.408 145.281 36.408ZM156.092 16.45C155.39 16.45 154.789 16.2007 154.29 15.702C153.792 15.2033 153.542 14.6027 153.542 13.9C153.542 13.1973 153.792 12.608 154.29 12.132C154.789 11.6333 155.39 11.384 156.092 11.384C156.795 11.384 157.396 11.6333 157.894 12.132C158.393 12.608 158.642 13.1973 158.642 13.9C158.642 14.6027 158.393 15.2033 157.894 15.702C157.396 16.2007 156.795 16.45 156.092 16.45ZM154.154 36V19.136H158.03V36H154.154ZM160.82 36V19.136H164.56L164.628 21.244C165.194 20.4053 165.92 19.782 166.804 19.374C167.688 18.9433 168.651 18.728 169.694 18.728C170.986 18.728 172.153 19 173.196 19.544C174.261 20.0653 175.077 20.8927 175.644 22.026C176.233 20.9833 177.026 20.1787 178.024 19.612C179.044 19.0227 180.154 18.728 181.356 18.728C182.67 18.728 183.838 19 184.858 19.544C185.9 20.0653 186.716 20.87 187.306 21.958C187.895 23.046 188.19 24.4173 188.19 26.072V36H184.382V26.582C184.382 25.154 184.053 24.0433 183.396 23.25C182.761 22.4567 181.809 22.06 180.54 22.06C179.248 22.06 178.239 22.4907 177.514 23.352C176.788 24.1907 176.426 25.358 176.426 26.854V36H172.618V26.582C172.618 25.1313 172.278 24.0207 171.598 23.25C170.94 22.4567 169.988 22.06 168.742 22.06C167.631 22.06 166.668 22.4567 165.852 23.25C165.058 24.0207 164.662 25.222 164.662 26.854V36H160.82ZM198.591 36.408C196.937 36.408 195.452 36.0453 194.137 35.32C192.823 34.5947 191.78 33.5747 191.009 32.26C190.261 30.9227 189.887 29.3587 189.887 27.568C189.887 25.732 190.284 24.1567 191.077 22.842C191.871 21.5273 192.936 20.5187 194.273 19.816C195.611 19.0907 197.095 18.728 198.727 18.728C200.382 18.728 201.867 19.0907 203.181 19.816C204.519 20.5187 205.573 21.5273 206.343 22.842C207.137 24.1567 207.533 25.732 207.533 27.568C207.533 29.268 207.148 30.7867 206.377 32.124C205.629 33.4613 204.575 34.5153 203.215 35.286C201.878 36.034 200.337 36.408 198.591 36.408ZM198.625 33.076C199.6 33.076 200.45 32.838 201.175 32.362C201.923 31.8633 202.513 31.1947 202.943 30.356C203.374 29.5173 203.589 28.5653 203.589 27.5C203.589 26.3893 203.374 25.426 202.943 24.61C202.513 23.794 201.923 23.1707 201.175 22.74C200.45 22.2867 199.611 22.06 198.659 22.06C197.662 22.06 196.789 22.298 196.041 22.774C195.316 23.25 194.761 23.9073 194.375 24.746C193.99 25.562 193.797 26.5027 193.797 27.568C193.797 28.724 194.013 29.7213 194.443 30.56C194.897 31.376 195.486 31.9993 196.211 32.43C196.959 32.8607 197.764 33.076 198.625 33.076Z"
+              fill="#222222"
+            ></path>
+          </svg>
+        </a>
+
+        <ul
+          class="list-none flex items-center justify-center gap-10 max-sm:hidden max-lg:gap-5"
+        >
+          <li>
+            <a
+              class="text-lg font-medium text-gray-400 hover:text-black transition-colors"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="text-lg font-medium text-gray-400 hover:text-black transition-colors"
+              href="/about-us"
+            >
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="text-lg font-medium text-gray-400 hover:text-black transition-colors"
+              href="/services"
+            >
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="text-lg font-medium text-gray-400 hover:text-black transition-colors"
+              href="/contact"
+            >
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- right -->
+      <div class="flex gap-7 items-center">
+        <span class="flex flex-col max-lg:hidden max-sm:hidden">
+          <span class="text-sm font-medium text-gray-400">Call Us- </span>
+          <span class="text-sm font-medium text-black underline"
+            >+91 9876543210</span
+          ></span
+        >
+        <a
+          href="/contact"
+          class="text-white font-bold bg-teal-800 py-3 px-5 rounded-lg max-sm:hidden"
+        >
+          Book Appointent
+        </a>
+
+        <i
+          class="fa-solid fa-bars text-2xl bg-teal-800 p-3 text-white rounded-lg mr-2 hidden max-sm:block"
+          id="menu-icon"
+        ></i>
+      </div>
+
+      <!-- slider bar  -->
+      <div
+        class="hidden fixed right-0 top-0 w-[100%] transition-all h-[100vh] bg-teal-800 z-50"
+        id="slider-bar"
+      >
+        <!-- left -->
+        <div
+          class="h-[100%] w-[20%] bg-black flex justify-center items-center opacity-50"
+        >
+          <i class="fa-solid fa-xmark text-2xl text-white" id="close-icon"></i>
+        </div>
+
+        <!-- right -->
+        <div class="h-[100%] w-[80%] py-10 px-5">
+          <ul class="flex flex-col gap-10">
+            <li>
+              <a
+                class="text-5xl font-medium text-gray-400 hover:text-black transition-colors"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-5xl font-medium text-gray-400 hover:text-black transition-colors"
+                href="/about-us"
+              >
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-5xl font-medium text-gray-400 hover:text-black transition-colors"
+                href="/services"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-5xl font-medium text-gray-400 hover:text-black transition-colors"
+                href="/contact"
+              >
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex flex-col px-6 py-3 gap-20 max-sm:px-2 max-lg:px-2 mt-10">
+      <!--Objective-------------------------------------------------------------------------->
+      <section
+        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
+      >
+        <!-- left -->
+        <div class="flex flex-col gap-10 order-1">
+          <h1 class="text-5xl max-sm:text-4xl max-lg:text-5xl">Our Services</h1>
+
+          <p class="text-2xl text-gray-600">
+            Explore our services and discover how we can enhance your dental
+            health.
+          </p>
+
+          <ul class="flex flex-col gap-2">
+            <li class="text-lg flex gap-3 items-center py-2 border-b">
+              <i class="fa-solid fa-check text-green-500"></i>Modern technology
+            </li>
+            <li class="text-lg flex gap-3 items-center py-2 border-b">
+              <i class="fa-solid fa-check text-green-500"></i>Friendly team you
+              can call friends
+            </li>
+            <li class="text-lg flex gap-3 items-center py-2 border-b">
+              <i class="fa-solid fa-check text-green-500"></i>Sedation dentistry
+              to help you relax
+            </li>
+            <li class="text-lg flex gap-3 items-center py-2 border-b">
+              <i class="fa-solid fa-check text-green-500"></i>We accept many
+              insurance plans and offer discounts
+            </li>
+            <li class="text-lg flex gap-3 items-center py-2 border-b">
+              <i class="fa-solid fa-check text-green-500"></i>We use
+              energy-saving and waste-reducing methods
+            </li>
+            <li class="text-lg flex gap-3 items-center py-2 border-b">
+              …and much more!
+            </li>
+          </ul>
+        </div>
+
+        <!-- right -->
+        <div class="relative h-[100%] flex items-center">
+          <img
+            class="rounded-2xl object-cover h-[100%]"
+            width="900"
+            src="/assets/home-1-4.webp"
+            alt="image"
+          />
+
+          <div
+            class="absolute bottom-2 left-2 p-6 backdrop-blur-2xl rounded-2xl border"
+          >
+            <p class="text-white text-2xl font-semibold pb-6">
+              Request Free Consultation
+            </p>
+            <div class="w-full flex items-center justify-between">
+              <a
+                href="/contact"
+                class="text-white rounded-lg py-3 px-6 text-lg border transition-all hover:bg-white hover:text-black"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Services -------------------------------------------------------------------------->
+      <section class="flex flex-col py-20 px-5 gap-20">
+        <div
+          class="grid grid-cols-3 gap-10 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-2"
+        >
+          <div
+            class="relative h-[80vh] rounded-lg max-sm:h-[50vh] max-lg:h-[60vh] max-xl:h-[60vh]"
+          >
+            <img
+              class="h-[100%] object-cover absolute brightness-50 z-[-1]"
+              src="/assets/service-1.webp"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-between h-[100%] py-10 px-5">
+              <div>
+                <h5 class="text-md font-semibold tracking-widest text-white">
+                  SPECIALIZED CARE
+                </h5>
+                <h4 class="text-4xl text-bold text-white">Oral Surgery</h4>
+              </div>
+
+              <button
+                class="text-md py-3 px-6 border backdrop-blur-2xl rounded-lg w-fit text-white"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative swiper-slide h-[80vh] rounded-lg overflow-hidden max-sm:h-[50vh] max-lg:h-[60vh] max-xl:h-[60vh]"
+          >
+            <img
+              class="h-[100%] object-cover absolute h-[100%] z-[-1] brightness-50"
+              src="/assets/service-2.webp"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-between h-[100%] py-10 px-5">
+              <div>
+                <h5 class="text-md font-semibold tracking-widest text-white">
+                  SPECIALIZED CARE
+                </h5>
+                <h4 class="text-4xl text-bold text-white">
+                  Pediatric Dentistry
+                </h4>
+              </div>
+
+              <button
+                class="text-md py-3 px-6 border backdrop-blur-2xl rounded-lg w-fit text-white"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative swiper-slide rounded-lg overflow-hidden h-[80vh] max-sm:h-[50vh] max-lg:h-[60vh] max-xl:h-[60vh]"
+          >
+            <img
+              class="h-[100%] object-cover absolute h-[100%] z-[-1] brightness-50"
+              src="/assets/service-3.webp"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-between h-[100%] py-10 px-5">
+              <div>
+                <h5 class="text-md font-semibold tracking-widest text-white">
+                  SPECIALIZED CARE
+                </h5>
+                <h4 class="text-4xl text-bold text-white">Whitening Boost</h4>
+              </div>
+
+              <button
+                class="text-md py-3 px-6 border backdrop-blur-2xl rounded-lg w-fit text-white"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative swiper-slide h-[80vh] rounded-lg overflow-hidden max-sm:h-[50vh] max-lg:h-[60vh] max-xl:h-[60vh]"
+          >
+            <img
+              class="h-[100%] object-cover absolute h-[100%] z-[-1] brightness-50"
+              src="/assets/service-4.webp"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-between h-[100%] py-10 px-5">
+              <div>
+                <h5 class="text-md font-semibold tracking-widest text-white">
+                  SPECIALIZED CARE
+                </h5>
+                <h4 class="text-4xl text-bold text-white">
+                  Whisdom Tooth extration
+                </h4>
+              </div>
+
+              <button
+                class="text-md py-3 px-6 border backdrop-blur-2xl rounded-lg w-fit text-white"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative swiper-slide h-[80vh] rounded-lg overflow-hidden max-sm:h-[50vh] max-lg:h-[60vh] max-xl:h-[60vh]"
+          >
+            <img
+              class="h-[100%] object-cover absolute h-[100%] z-[-1] brightness-50"
+              src="/assets/service-5.webp"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-between h-[100%] py-10 px-5">
+              <div>
+                <h5 class="text-md font-semibold tracking-widest text-white">
+                  SPECIALIZED CARE
+                </h5>
+                <h4 class="text-4xl text-bold text-white">Gum Care</h4>
+              </div>
+
+              <button
+                class="text-md py-3 px-6 border backdrop-blur-2xl rounded-lg w-fit text-white"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative swiper-slide h-[80vh] rounded-lg overflow-hidden max-sm:h-[50vh] max-lg:h-[60vh] max-xl:h-[60vh]"
+          >
+            <img
+              class="h-[100%] object-cover absolute h-[100%] z-[-1] brightness-50"
+              src="/assets/service-7.webp"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-between h-[100%] py-10 px-5">
+              <div>
+                <h5 class="text-md font-semibold tracking-widest text-white">
+                  SPECIALIZED CARE
+                </h5>
+                <h4 class="text-4xl text-bold text-white">
+                  Emergency Dentistry
+                </h4>
+              </div>
+
+              <button
+                class="text-md py-3 px-6 border backdrop-blur-2xl rounded-lg w-fit text-white"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer --------------------------------------------------->
+    <footer class="pt-10 px-5 bg-gray-200 mt-20">
+      <section class="grid grid-cols-3 max-sm:grid-cols-1 max-sm:gap-10">
+        <ul>
+          <li
+            class="text-3xl font-md text-gray-400 hover:text-black transition-all"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li
+            class="text-3xl font-md text-gray-400 hover:text-black transition-all"
+          >
+            <a href="/about-us">About Us</a>
+          </li>
+          <li
+            class="text-3xl font-md text-gray-400 hover:text-black transition-all"
+          >
+            <a href="/services">Services</a>
+          </li>
+          <li
+            class="text-3xl font-md text-gray-400 hover:text-black transition-all"
+          >
+            <a href="/contact">Contacts</a>
+          </li>
+        </ul>
+
+        <p class="text-lg">
+          We understand just how closely connected oral health is to your
+          overall health, confidence, and appearance, and we pride ourselves on
+          cultivating a friendly, upbeat dental environment where you can always
+          feel comfortable in our care.
+        </p>
+
+        <div class="flex flex-col text-end gap-5 max-sm:text-start">
+          <div class="flex flex-col gap-1">
+            <span>511 SW 10th Ave 1206,</span>
+            <span>Portland, OR</span>
+            <span>United States</span>
+            <span class="font-semibold">+91 9876543210</span>
+            <span class="font-semibold">xyz@gmail.com</span>
+          </div>
+
+          <button
+            class="text-md self-end w-fit py-3 px-6 bg-teal-800 rounded-lg text-white font-md max-sm:self-start"
+          >
+            Book a Visit
+          </button>
+        </div>
+      </section>
+      <section class="flex items-center justify-between pt-20 pb-3">
+        <span
+          >This is a sample website - cmsmasters © 2024 - All Rights
+          Reserved</span
+        >
+        <span></span>
+      </section>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="/script.js"></script>
+  </body>
+</html>
