@@ -22,10 +22,10 @@
   </head>
   <body>
     <nav
-      class="flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
+      class="navbar flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
     >
       <!-- left -->
-      <div class="flex gap-10 max-lg:gap-7">
+      <div class="navbar-left flex gap-10 max-lg:gap-7">
         <a href="/">
           <svg
             class="max-sm:w-[150px]"
@@ -89,13 +89,14 @@
       </div>
 
       <!-- right -->
-      <div class="flex gap-7 items-center">
+      <div class="navbar-right flex gap-7 items-center">
         <span class="flex flex-col max-lg:hidden max-sm:hidden">
           <span class="text-sm font-medium text-gray-400">Call Us- </span>
           <span class="text-sm font-medium text-black underline"
             >+91 9876543210</span
           ></span
         >
+
         <a
           href="/contact"
           class="text-white font-bold bg-teal-800 py-3 px-5 rounded-lg max-sm:hidden"
@@ -167,10 +168,10 @@
     <main class="flex flex-col px-6 py-3 gap-20 max-sm:px-2 max-lg:px-2 mt-10">
       <!--  banner------------------------------------------------------------------------------>
       <section
-        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
+        class="home-banner grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
       >
         <!-- left -->
-        <div class="flex flex-col gap-10">
+        <div class="home-banner-left flex flex-col gap-10">
           <h1 class="text-7xl max-sm:text-5xl max-lg:text-6xl">
             State of the Art Dentistry
           </h1>
@@ -215,7 +216,7 @@
         </div>
 
         <!-- right -->
-        <div class="relative h-[100%] flex items-center">
+        <div class="home-banner-right relative h-[100%] flex items-center">
           <img
             class="rounded-2xl object-cover h-[100%]"
             width="900"
@@ -242,21 +243,25 @@
       </section>
 
       <!-- about ------------------------------------------------------------------------------>
-      <section class="container flex gap-10 max-sm:flex-col py-10">
+      <section
+        class="about-section container flex gap-10 max-sm:flex-col py-10"
+      >
         <!-- left -->
-        <div class="flex w-[25%] max-sm:w-full">
+        <div class="about-section-left flex w-[25%] max-sm:w-full">
           <p class="text-xl">
             The best way to maintain a healthy smile is to be proactive!
           </p>
         </div>
 
         <!-- right -->
-        <div class="flex w-[75%] flex-col gap-16 max-sm:w-full">
-          <h2 class="text-5xl max-sm:text-3xl max-lg:text-3xl">
+        <div
+          class="about-section-right flex w-[75%] flex-col gap-16 max-sm:w-full"
+        >
+          <p class="text-5xl max-sm:text-3xl max-lg:text-3xl">
             By partnering with our office for checkups, professional cleanings,
             routine care, and any necessary dental treatment, we can help you
             keep your smile in tip-top shape.
-          </h2>
+          </p>
 
           <div
             class="w-full grid grid-cols-2 gap-10 items-center max-sm:gap-5 max-sm:grid-cols-1"
@@ -292,8 +297,10 @@
         </div>
       </section>
 
-      <!-- Specility --------------------------------------------------->
-      <section class="py-10 px-5 bg-gray-200 flex flex-col gap-10">
+      <!-- Speciality --------------------------------------------------->
+      <section
+        class="speciality-section py-10 px-5 bg-gray-200 flex flex-col gap-10"
+      >
         <p
           class="text-center text-md font-semibold tracking-widest text-gray-400"
         >
@@ -304,7 +311,7 @@
           class="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-2 gap-5"
         >
           <div class="bg-white rounded-2xl p-10 flex flex-col gap-10">
-            <h4 class="text-4xl">Modern equipment</h4>
+            <h5 class="text-4xl">Modern equipment</h5>
             <p>
               We have all the necessary advanced equipment for diagnosis &
               treatment: CT machine Orthophos SL, CJ-Optic microscope, CEREC
@@ -312,14 +319,14 @@
             </p>
           </div>
           <div class="bg-white rounded-2xl p-10 flex flex-col gap-10">
-            <h4 class="text-4xl">Pain-free treatment</h4>
+            <h5 class="text-4xl">Pain-free treatment</h5>
             <p>
               Know-how and professionalism of our doctors allow you to
               painlessly perform dental manipulations.
             </p>
           </div>
           <div class="bg-white rounded-2xl p-10 flex flex-col gap-10">
-            <h4 class="text-4xl">Transparent prices</h4>
+            <h5 class="text-4xl">Transparent prices</h5>
             <p>
               No hidden fees. The prices on our website correspond to reality.
               You will not have “unpleasant surprises” during final calculations
@@ -327,7 +334,7 @@
             </p>
           </div>
           <div class="bg-white rounded-2xl p-10 flex flex-col gap-10">
-            <h4 class="text-4xl">Highly-qualified staff</h4>
+            <h5 class="text-4xl">Highly-qualified staff</h5>
             <p>
               Our doctors are constantly improving their skills by participating
               in international medical conferences and quality improvement
@@ -339,13 +346,13 @@
 
       <!--Objective-------------------------------------------------------------------------->
       <section
-        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
+        class="objective-section grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
       >
         <!-- left -->
-        <div class="flex flex-col gap-10 order-1">
-          <h1 class="text-5xl max-sm:text-4xl max-lg:text-5xl">
+        <div class="objective-section-left flex flex-col gap-10 order-1">
+          <h3 class="text-5xl max-sm:text-4xl max-lg:text-5xl">
             Everything you need for a healthy smile
-          </h1>
+          </h3>
 
           <p class="text-2xl text-gray-600">We’re putting your comfort first</p>
 
@@ -376,7 +383,9 @@
         </div>
 
         <!-- right -->
-        <div class="relative h-[100%] flex items-center">
+        <div
+          class="objective-section-right relative h-[100%] flex items-center"
+        >
           <img
             class="rounded-2xl object-cover h-[100%]"
             width="900"
@@ -574,7 +583,7 @@
     </main>
 
     <!-- footer --------------------------------------------------->
-    <footer class="pt-10 px-5 bg-gray-200 mt-20">
+    <footer class="footer-section pt-10 px-5 bg-gray-200 mt-20">
       <section class="grid grid-cols-3 max-sm:grid-cols-1 max-sm:gap-10">
         <ul>
           <li
@@ -630,6 +639,8 @@
     </footer>
 
     <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
     <script src="/homeScript.js"></script>

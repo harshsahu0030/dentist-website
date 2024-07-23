@@ -22,10 +22,10 @@
   </head>
   <body>
     <nav
-      class="flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
+      class="navbar flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
     >
       <!-- left -->
-      <div class="flex gap-10 max-lg:gap-7">
+      <div class="navbar-left flex gap-10 max-lg:gap-7">
         <a href="/">
           <svg
             class="max-sm:w-[150px]"
@@ -89,7 +89,7 @@
       </div>
 
       <!-- right -->
-      <div class="flex gap-7 items-center">
+      <div class="navbar-right flex gap-7 items-center">
         <span class="flex flex-col max-lg:hidden max-sm:hidden">
           <span class="text-sm font-medium text-gray-400">Call Us- </span>
           <span class="text-sm font-medium text-black underline"
@@ -167,7 +167,7 @@
     <main class="flex flex-col px-6 py-3 gap-20 max-sm:px-2 max-lg:px-2 mt-10">
       <!--contact-------------------------------------------------------------------------->
       <section
-        class="relative container h-[100vh] max-sm:h-[60vh] max-lg:h-[40vh] max-xl:h-[60vh]"
+        class="contact-section relative container h-[100vh] max-sm:h-[60vh] max-lg:h-[40vh] max-xl:h-[60vh]"
       >
         <img
           class="w-full h-[100%] object-cover"
@@ -185,9 +185,9 @@
             <h5 class="text-lg font-semibold tracking-widest text-gray-400">
               CONTACT US
             </h5>
-            <h3 class="text-6xl max-sm:text-2xl max-lg:text-3xl">
+            <h1 class="text-6xl max-sm:text-2xl max-lg:text-3xl">
               Contact Us Easily Online, by Phone or by Dropping In
-            </h3>
+            </h1>
             <div
               class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1"
             >
@@ -339,7 +339,7 @@
     </main>
 
     <!-- footer --------------------------------------------------->
-    <footer class="pt-10 px-5 bg-gray-200 mt-20">
+    <footer class="footer-section pt-10 px-5 bg-gray-200 mt-20">
       <section class="grid grid-cols-3 max-sm:grid-cols-1 max-sm:gap-10">
         <ul>
           <li
@@ -395,6 +395,8 @@
     </footer>
 
     <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

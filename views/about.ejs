@@ -22,10 +22,10 @@
   </head>
   <body>
     <nav
-      class="flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
+      class="navbar flex items-center justify-between px-6 py-3 gap-5 max-sm:px-1 max-lg:px-2"
     >
       <!-- left -->
-      <div class="flex gap-10 max-lg:gap-7">
+      <div class="navbar-left flex gap-10 max-lg:gap-7">
         <a href="/">
           <svg
             class="max-sm:w-[150px]"
@@ -89,7 +89,7 @@
       </div>
 
       <!-- right -->
-      <div class="flex gap-7 items-center">
+      <div class="navbar-right flex gap-7 items-center">
         <span class="flex flex-col max-lg:hidden max-sm:hidden">
           <span class="text-sm font-medium text-gray-400">Call Us- </span>
           <span class="text-sm font-medium text-black underline"
@@ -164,10 +164,12 @@
       </div>
     </nav>
 
-    <main class="flex flex-col px-6 py-3 gap-20 max-sm:px-2 max-lg:px-2 mt-10">
+    <main
+      class="home-banner flex flex-col px-6 py-3 gap-20 max-sm:px-2 max-lg:px-2 mt-10"
+    >
       <!--  banner------------------------------------------------------------------------------>
       <section
-        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1 h-"
+        class="home-banner-left grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1 h-"
       >
         <!-- left -->
         <div class="flex flex-col gap-10">
@@ -205,7 +207,7 @@
         </div>
 
         <!-- right -->
-        <div class="relative w-[100%] flex items-center">
+        <div class="home-banner-right relative w-[100%] flex items-center">
           <img
             class="rounded-2xl object-cover w-[100%]"
             width="900"
@@ -216,16 +218,20 @@
       </section>
 
       <!-- about ------------------------------------------------------------------------------>
-      <section class="container flex gap-10 max-sm:flex-col py-10">
+      <section
+        class="about-section container flex gap-10 max-sm:flex-col py-10"
+      >
         <!-- left -->
-        <div class="flex w-[25%] max-sm:w-full">
+        <div class="about-section-left flex w-[25%] max-sm:w-full">
           <p class="text-xl">
             The best way to maintain a healthy smile is to be proactive!
           </p>
         </div>
 
         <!-- right -->
-        <div class="flex w-[75%] flex-col gap-16 max-sm:w-full">
+        <div
+          class="about-section-right flex w-[75%] flex-col gap-16 max-sm:w-full"
+        >
           <h2 class="text-5xl max-sm:text-3xl max-lg:text-3xl">
             By partnering with our office for checkups, professional cleanings,
             routine care, and any necessary dental treatment, we can help you
@@ -257,22 +263,18 @@
             dental environment where you can always feel comfortable in our
             care.
           </p>
-
-          <a href="#" class="flex items-center gap-2 text-lg font-semibold"
-            >Read More <i class="fa-solid fa-arrow-right-long"></i>
-          </a>
         </div>
       </section>
 
       <!--Objective-------------------------------------------------------------------------->
       <section
-        class="grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
+        class="objective-section grid grid-cols-2 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-1"
       >
         <!-- left -->
-        <div class="flex flex-col gap-10 order-1">
-          <h1 class="text-5xl max-sm:text-4xl max-lg:text-5xl">
+        <div class="objective-section-left flex flex-col gap-10 order-1">
+          <h2 class="text-5xl max-sm:text-4xl max-lg:text-5xl">
             Everything you need for a healthy smile
-          </h1>
+          </h2>
 
           <p class="text-2xl text-gray-600">We’re putting your comfort first</p>
 
@@ -303,7 +305,9 @@
         </div>
 
         <!-- right -->
-        <div class="relative h-[100%] flex items-center">
+        <div
+          class="objective-section-right relative h-[100%] flex items-center"
+        >
           <img
             class="rounded-2xl object-cover h-[100%]"
             width="900"
@@ -330,7 +334,7 @@
     </main>
 
     <!-- footer --------------------------------------------------->
-    <footer class="pt-10 px-5 bg-gray-200 mt-20">
+    <footer class="footer-section pt-10 px-5 bg-gray-200 mt-20">
       <section class="grid grid-cols-3 max-sm:grid-cols-1 max-sm:gap-10">
         <ul>
           <li
@@ -386,6 +390,8 @@
     </footer>
 
     <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

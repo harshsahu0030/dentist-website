@@ -2,7 +2,7 @@ import app from "./app.js";
 
 const connectServer = async () => {
   app.listen(process.env.PORT, () => {
-    console.log("Server connected successfully");
+    console.log("Server connected successfully " + process.env.PORT);
   });
 };
 

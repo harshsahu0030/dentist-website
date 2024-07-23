@@ -24,7 +24,7 @@ router.route("/contact").post(async (req, res) => {
     await appointmentModel.create(req.body);
     res.render("contact", { message: "Form submitted successfully" });
   } catch (error) {
-    console.log(`Error in submitting form  : ${error}`);
+    res.render("contact", { message: `Error in submitting form  : ${error}` });
   }
 });
 
